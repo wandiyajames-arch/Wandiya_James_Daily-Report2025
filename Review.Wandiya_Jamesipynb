@@ -1,0 +1,357 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "5ff731f1-d321-465b-8815-dcaf5fa938de",
+   "metadata": {},
+   "source": [
+    "**Variable** \n",
+    "- How to declare a variable"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "f5f63970-c2e2-4367-84a3-2f7336d9b4e3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_name = \"Wandiya\"\n",
+    "my_age = 25\n",
+    "my_height = 1.71"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "ff64d211-6a7d-497d-ab93-4b5a8ff885b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.71\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(my_height)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "0753ebc1-c52b-46dd-b44c-827a0129cbf8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1.71"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_height"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "2eeef68f-e4f4-4f36-94c0-727ef0fc4d15",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(my_age)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4e2a65f3-924d-4177-8399-56d08470961e",
+   "metadata": {},
+   "source": [
+    "**To perfom some operation on these variables**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "790ca7ad-5eb4-4604-b85b-b9d8417b2dca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "my_ful_name is  Wandiya James\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_first_name = \"Wandiya\"\n",
+    "my_last_name = \"James\"\n",
+    "my_age = 25\n",
+    "print (\"my_ful_name is \", my_name + \" \" + my_last_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "debd8421-e442-4949-be7f-dc90f0e2a53b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'25Wandiya'"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str(my_age) + my_first_name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "2f0350dc-decf-4256-989f-4e5b9865ef72",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'W'"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_first_name[0]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6ee9fb25-164a-4d87-aae7-e417d7c2908f",
+   "metadata": {},
+   "source": [
+    "**To perform operation on List**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "c6404615-51cd-4f62-9f9f-04bd0cadd066",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list = [my_age, my_first_name, my_last_name, my_height]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "577044d8-2a68-4c35-b3d5-f5b12f42f24b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[25, 'Wandiya', 'James', 1.71]"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3ce0b7c3-5868-4568-9190-9985d3e5dde8",
+   "metadata": {},
+   "source": [
+    "**To perform operation on Dictionary**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "28fe662a-093c-49e2-a49b-9107d8fa47c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'a': 25, 'b': 1.71}"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_dict = {\"a\": my_age, \"b\": my_height}\n",
+    "my_dict"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5b0f879b-5c9d-4627-bc23-dcdb0da3bdda",
+   "metadata": {},
+   "source": [
+    "**To perform operation on loop**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "739d89d0-0bc6-468b-9a2d-31d69cece444",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25\n",
+      "Wandiya\n",
+      "James\n",
+      "1.71\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in my_list:\n",
+    "    if str(i) >=str((0)):\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7cd46a1e-fb8a-4581-b4b7-1c416494e312",
+   "metadata": {},
+   "source": [
+    "**Comparison**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "ea68b78e-a5b1-4d72-8734-139527014199",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"y\" >= \"z\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "540571a3-102d-40b7-a561-144e69bf396f",
+   "metadata": {},
+   "source": [
+    "**function**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "7728ef26-9bd2-431a-afad-4642191aae10",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def square(x):\n",
+    "    \"\"\" \n",
+    "    To perform operation on square\n",
+    "    \"\"\"\n",
+    "    return x*x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "f1e26434-d206-4518-b09c-fc09e71fe340",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "square(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b4fe2c71-6896-452f-98e4-21894c269290",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
